@@ -36,38 +36,40 @@
             <p class="mt-1 text-sm leading-6 text-slate-600">Keep row height compact, status color restrained, and actions right aligned.</p>
           </div>
           <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
-              <thead class="bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
+            <table class="blt-data-table text-left text-sm">
+              <thead class="text-xs uppercase tracking-wide">
                 <tr>
-                  <th class="px-5 py-3 font-extrabold">Report</th>
-                  <th class="px-5 py-3 font-extrabold">Domain</th>
-                  <th class="px-5 py-3 font-extrabold">Severity</th>
-                  <th class="px-5 py-3 font-extrabold">Status</th>
-                  <th class="px-5 py-3 font-extrabold text-right">Points</th>
+                  <th class="px-5 py-3 font-extrabold" scope="col">Report</th>
+                  <th class="px-5 py-3 font-extrabold" scope="col">Domain</th>
+                  <th class="px-5 py-3 font-extrabold" scope="col">Severity</th>
+                  <th class="px-5 py-3 font-extrabold" scope="col">Status</th>
+                  <th class="px-5 py-3 font-extrabold text-right" scope="col">Points</th>
                 </tr>
               </thead>
-              <tbody class="divide-y divide-slate-200 bg-white">
+              <tbody>
                 <tr>
                   <td class="px-5 py-4 font-bold text-slate-900">Open redirect</td>
                   <td class="px-5 py-4 text-slate-600">api.blt.owasp.org</td>
-                  <td class="px-5 py-4"><span class="rounded-full border border-amber-500/30 bg-amber-50 px-2.5 py-1 text-xs font-bold text-amber-700">Medium</span></td>
-                  <td class="px-5 py-4"><span class="rounded-full border border-emerald-500/30 bg-emerald-50 px-2.5 py-1 text-xs font-bold text-emerald-700">Verified</span></td>
+                  <td class="px-5 py-4"><span class="blt-status-badge blt-status-warning">Medium</span></td>
+                  <td class="px-5 py-4"><span class="blt-status-badge blt-status-success">Verified</span></td>
                   <td class="px-5 py-4 text-right font-extrabold text-slate-900">120</td>
                 </tr>
                 <tr>
                   <td class="px-5 py-4 font-bold text-slate-900">Expired CORS origin</td>
                   <td class="px-5 py-4 text-slate-600">cloud.blt.owasp.org</td>
-                  <td class="px-5 py-4"><span class="rounded-full border border-red-600/30 bg-[#feeae9] px-2.5 py-1 text-xs font-bold text-red-600">High</span></td>
-                  <td class="px-5 py-4"><span class="rounded-full border border-amber-500/30 bg-amber-50 px-2.5 py-1 text-xs font-bold text-amber-700">Review</span></td>
+                  <td class="px-5 py-4"><span class="blt-status-badge blt-status-danger">High</span></td>
+                  <td class="px-5 py-4"><span class="blt-status-badge blt-status-warning">Review</span></td>
                   <td class="px-5 py-4 text-right font-extrabold text-slate-900">200</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <pre class="m-5 overflow-x-auto rounded-lg border border-slate-700 bg-slate-900 p-3 text-xs text-slate-200"><code>&lt;div class="overflow-x-auto rounded-xl border border-slate-200 bg-white"&gt;
-  &lt;table class="min-w-full divide-y divide-slate-200 text-left text-sm"&gt;
-    &lt;thead class="bg-slate-50 text-xs uppercase tracking-wide text-slate-500"&gt;...&lt;/thead&gt;
-    &lt;tbody class="divide-y divide-slate-200 bg-white"&gt;...&lt;/tbody&gt;
+          <pre class="m-5 overflow-x-auto rounded-lg border border-slate-700 bg-slate-900 p-3 text-xs text-slate-200"><code>&lt;div class="overflow-x-auto"&gt;
+  &lt;table class="blt-data-table text-left text-sm"&gt;
+    &lt;thead class="text-xs uppercase tracking-wide"&gt;
+      &lt;th scope="col"&gt;Report&lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;...&lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
         </section>

@@ -37,13 +37,13 @@
               <p class="mt-2 text-sm leading-6 text-slate-600">Use soft backgrounds, visible borders, and short labels that scan well in tables.</p>
             </div>
             <div class="flex flex-wrap gap-2 rounded-xl border border-slate-200 bg-white p-4">
-              <span class="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-50 px-3 py-1 text-xs font-bold text-emerald-700"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Verified</span>
-              <span class="inline-flex items-center gap-1.5 rounded-full border border-amber-500/30 bg-amber-50 px-3 py-1 text-xs font-bold text-amber-700"><i class="fa-solid fa-clock" aria-hidden="true"></i> Pending</span>
-              <span class="inline-flex items-center gap-1.5 rounded-full border border-red-600/30 bg-[#feeae9] px-3 py-1 text-xs font-bold text-red-600"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Critical</span>
-              <span class="inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-slate-50 px-3 py-1 text-xs font-bold text-slate-600"><i class="fa-solid fa-box-archive" aria-hidden="true"></i> Archived</span>
+              <span class="blt-status-badge blt-status-success"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Verified</span>
+              <span class="blt-status-badge blt-status-warning"><i class="fa-solid fa-clock" aria-hidden="true"></i> Pending</span>
+              <span class="blt-status-badge blt-status-danger"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Critical</span>
+              <span class="blt-status-badge blt-status-muted"><i class="fa-solid fa-box-archive" aria-hidden="true"></i> Archived</span>
             </div>
           </div>
-          <pre class="mt-4 overflow-x-auto rounded-lg border border-slate-700 bg-slate-900 p-3 text-xs text-slate-200"><code>&lt;span class="inline-flex items-center gap-1.5 rounded-full border border-red-600/30 bg-[#feeae9] px-3 py-1 text-xs font-bold text-red-600"&gt;
+          <pre class="mt-4 overflow-x-auto rounded-lg border border-slate-700 bg-slate-900 p-3 text-xs text-slate-200"><code>&lt;span class="blt-status-badge blt-status-danger"&gt;
   &lt;i class="fa-solid fa-triangle-exclamation" aria-hidden="true"&gt;&lt;/i&gt; Critical
 &lt;/span&gt;</code></pre>
         </section>
@@ -60,9 +60,9 @@
           <article class="blt-card p-5">
             <h2 class="text-lg font-extrabold tracking-tight">Compact Labels</h2>
             <div class="mt-4 flex flex-wrap gap-2">
-              <span class="rounded-md border border-slate-200 bg-white px-2 py-1 text-xs font-bold text-slate-600">API v2</span>
-              <span class="rounded-md border border-slate-200 bg-white px-2 py-1 text-xs font-bold text-slate-600">OAuth</span>
-              <span class="rounded-md border border-slate-200 bg-white px-2 py-1 text-xs font-bold text-slate-600">Cloudflare</span>
+              <span class="blt-label">API v2</span>
+              <span class="blt-label">OAuth</span>
+              <span class="blt-label">Cloudflare</span>
             </div>
           </article>
         </section>

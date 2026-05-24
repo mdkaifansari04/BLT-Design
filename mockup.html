@@ -5,31 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BLT Design Preview</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              blt: {
-                DEFAULT: "#E10101",
-                dark: "#c10000",
-                soft: "#fee2e2",
-              },
-            },
-            fontFamily: {
-              sans: ["Inter", "system-ui", "sans-serif"],
-            },
-            boxShadow: {
-              card: "0 18px 45px -26px rgba(15, 23, 42, 0.28)",
-            },
-          },
-        },
-      };
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="./docs/assets/js/theme.js"></script>
+    <link rel="stylesheet" href="./docs/assets/css/blt-design.css" />
   </head>
   <body class="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(225,1,1,0.08),_transparent_32%),linear-gradient(to_bottom,_#f8fafc,_#fff6f6_42%,_#ffffff)] font-sans text-slate-900 antialiased">
     <div class="mx-auto min-h-screen max-w-[1600px] px-4 py-4 sm:px-6 lg:px-8">
@@ -154,17 +135,17 @@
             </header>
 
             <section class="mt-6 grid gap-4 md:grid-cols-3">
-              <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-card">
+              <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
                 <p class="text-sm font-medium text-slate-500">Patterns in focus</p>
                 <p class="mt-2 text-3xl font-bold tracking-tight text-slate-950">12</p>
                 <p class="mt-2 text-sm text-slate-600">Search, tables, contributor dashboards, form stacks, and navigation states.</p>
               </div>
-              <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-card">
+              <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
                 <p class="text-sm font-medium text-slate-500">Shared structure</p>
                 <p class="mt-2 text-3xl font-bold tracking-tight text-slate-950">1 shell</p>
                 <p class="mt-2 text-sm text-slate-600">Consistent spacing, visual rhythm, and CTA behavior across pages.</p>
               </div>
-              <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-card">
+              <div class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
                 <p class="text-sm font-medium text-slate-500">Brand stance</p>
                 <p class="mt-2 text-3xl font-bold tracking-tight text-slate-950">BLT red</p>
                 <p class="mt-2 text-sm text-slate-600">High-contrast accents with restrained neutrals and practical surfaces.</p>
@@ -172,7 +153,7 @@
             </section>
 
             <section class="mt-6 grid gap-5 xl:grid-cols-[1.35fr_0.95fr]">
-              <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-card">
+              <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
                 <div class="flex flex-col gap-4 border-b border-slate-200 pb-4 lg:flex-row lg:items-center lg:justify-between">
                   <div>
                     <div class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
@@ -255,7 +236,7 @@
                 </div>
               </article>
 
-              <article class="rounded-3xl border border-slate-200 bg-slate-950 p-5 text-white shadow-card">
+              <article class="rounded-3xl border border-slate-200 bg-slate-950 p-5 text-white shadow-sm">
                 <div class="flex items-center justify-between">
                   <div>
                     <div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-red-200">
@@ -321,7 +302,7 @@
             </section>
 
             <section class="mt-5 grid gap-5 2xl:grid-cols-3">
-              <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-card">
+              <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
                 <div class="flex items-center justify-between">
                   <div>
                     <div class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
@@ -355,7 +336,7 @@
                 </div>
               </article>
 
-              <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-card">
+              <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
                 <div class="flex items-center justify-between">
                   <div>
                     <div class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
@@ -395,7 +376,7 @@
                 </div>
               </article>
 
-              <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-card">
+              <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
                 <div class="flex items-center justify-between">
                   <div>
                     <div class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
@@ -435,7 +416,7 @@
             </section>
 
             <section class="mt-5 grid gap-5 xl:grid-cols-[0.95fr_1.05fr]">
-              <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-card">
+              <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
                 <div class="flex items-center justify-between">
                   <div>
                     <div class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
@@ -467,7 +448,7 @@
                 </div>
               </article>
 
-              <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-card">
+              <article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
                 <div class="flex items-center justify-between">
                   <div>
                     <div class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
